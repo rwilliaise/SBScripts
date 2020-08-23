@@ -18,9 +18,14 @@ Tool.Activated:Connect(function()
 	if Tool.Enabled then
 		local AnimationTrack = Players.THKY.Character.Humanoid:LoadAnimation(Animation)
 		
+		Tool.Enabled = false
 		Sound.SoundId = "rbxassetid://" .. Sounds[math.random(1,#Sounds)]
 		Sound:Play()
 		AnimationTrack:Play()
+		
+		wait(0.1)
+		
+		Tool.Enabled = true
 	end
 end)
 
@@ -33,7 +38,7 @@ Handle.Size = Vector3.new(1,1,1)
 
 Sound.Volume = 1
 
-Animation.AnimationId = "rbxassetid://32729591"
+Animation.AnimationId = "rbxassetid://32729592"
 
 Tool.Name = "Bugle"
 Tool.TextureId = "rbxassetid://32316702"
