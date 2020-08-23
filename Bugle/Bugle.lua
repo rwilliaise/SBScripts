@@ -7,10 +7,11 @@ local Sound = Instance.new("Sound")
 local Animation = Instance.new("Animation")
 local Sounds =
 {
-	"32727625",
-	"32727646",
-	"32727664",
-	"32727673"
+	"29029134",
+	"29029143",
+	"29029154",
+	"29029170",
+	"29029176"
 }
 
 Tool.Activated:Connect(function()
